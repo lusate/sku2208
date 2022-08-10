@@ -11,6 +11,8 @@ public class ShapeTest {
 		
 		Point p2 = new Point(10,23);
 		p2.show();
+		p2.show(false);
+		p2.show(true);
 	}
 
 }
