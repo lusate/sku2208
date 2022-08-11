@@ -7,7 +7,7 @@ public class Test {
 	public static void main(String[] args) {
 		Myobj m = new Myobj();
 		Object o = new Myobj();
-		o = new ÀÚµ¿Â÷User();
+		o = new ìë™ì°¨User();
 		o = new Stack<>();
 
 	}

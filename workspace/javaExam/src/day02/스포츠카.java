@@ -1,16 +1,16 @@
 package day02;
 
-public class ½ºÆ÷Ã÷Ä« extends ÀÚµ¿Â÷ {
-	public ½ºÆ÷Ã÷Ä«() {
-		System.out.println("½ºÆ÷Ã÷Ä« »ı¼ºÀÚ ½ÇÇà");
+public class ìŠ¤í¬ì¸ ì¹´ extends ìë™ì°¨ {
+	public ìŠ¤í¬ì¸ ì¹´() {
+		System.out.println("ìŠ¤í¬ì¸ ì¹´ ìƒì„±ì ì‹¤í–‰");
 	}
-	public void ´Ş¸®´Ù() {
-		System.out.println("½ºÆ÷Ã÷Ä«°¡ ÈÄ·û±¸µ¿À¸·Î ´Ş¸³´Ï´Ù.");
+	public void ë‹¬ë¦¬ë‹¤() {
+		System.out.println("ìŠ¤í¬ì¸ ì¹´ê°€ í›„ë¥œêµ¬ë™ìœ¼ë¡œ ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
-	public void ÁöºØÀ»¿­´Ù() {
-		System.out.println("½ºÆ÷Ã÷Ä«ÀÇ ÁöºØÀ» ¿±´Ï´Ù.");
+	public void ì§€ë¶•ì„ì—´ë‹¤() {
+		System.out.println("ìŠ¤í¬ì¸ ì¹´ì˜ ì§€ë¶•ì„ ì—½ë‹ˆë‹¤.");
 	}
 	public void run() {
-		System.out.println("½ºÆ÷Ã÷Ä«ÀÇ run");
+		System.out.println("ìŠ¤í¬ì¸ ì¹´ì˜ run");
 	}
 }

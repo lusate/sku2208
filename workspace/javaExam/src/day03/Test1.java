@@ -4,9 +4,9 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		
-		//»ó¼Ó -  ÇÊµå³ª ¸Þ¼­µå°¡ °¢°¢ ÇÏ³ª¾¿ ÀÖÀ»¶§´Â °í¹ÎÇÒ ÇÊ¿ä°¡ ¾ø´Ù. 
-		// ÇÊµå´Â ¿À¹ö¶óÀÌµå µÇ¸é Å¸ÀÔÀ» µû¸¥´Ù.
-		//¸Þ¼Òµå´Â ¿À¹ö¶óÀÌµå µÇ¸é ¹«Á¶°Ç ÀÚ½Ä°ÍÀ» »ç¿ëÇÑ´Ù. 
+		//ìƒì† -  í•„ë“œë‚˜ ë©”ì„œë“œê°€ ê°ê° í•˜ë‚˜ì”© ìžˆì„ë•ŒëŠ” ê³ ë¯¼í•  í•„ìš”ê°€ ì—†ë‹¤. 
+		// í•„ë“œëŠ” ì˜¤ë²„ë¼ì´ë“œ ë˜ë©´ íƒ€ìž…ì„ ë”°ë¥¸ë‹¤.
+		//ë©”ì†Œë“œëŠ” ì˜¤ë²„ë¼ì´ë“œ ë˜ë©´ ë¬´ì¡°ê±´ ìžì‹ê²ƒì„ ì‚¬ìš©í•œë‹¤. 
 		
 		Parent p = new Parent();
 		System.out.println(p.i);  //10

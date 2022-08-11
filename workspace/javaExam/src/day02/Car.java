@@ -3,7 +3,7 @@ package day02;
 public class Car {
 	private String name;
 	int speed;
-	String ¾ÖÄª;
+	String ì• ì¹­;
 	
 	public Car() {
 		
@@ -11,11 +11,11 @@ public class Car {
 	public Car(String name,int speed) {
 		
 	}
-	public Car(int speed, String ¾ÖÄª) {
+	public Car(int speed, String ì• ì¹­) {
 		
 	}
 	public void setName(String name) {
-		if(!name.equals("³Ê³ªÅ¸"))
+		if(!name.equals("ë„ˆë‚˜íƒ€"))
 			this.name = name;
 	}
 	public String getName() {

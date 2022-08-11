@@ -1,11 +1,11 @@
 package day02;
 
-abstract public class ÀÚµ¿Â÷ {
-	public ÀÚµ¿Â÷() {
-		System.out.println("ÀÚµ¿Â÷ »ı¼ºÀÚ ½ÇÇà");
+abstract public class ìë™ì°¨ {
+	public ìë™ì°¨() {
+		System.out.println("ìë™ì°¨ ìƒì„±ì ì‹¤í–‰");
 	}
-	public void ´Ş¸®´Ù() {
-		System.out.println("ÀÚµ¿Â÷°¡ ´Ş¸³´Ï´Ù.");
+	public void ë‹¬ë¦¬ë‹¤() {
+		System.out.println("ìë™ì°¨ê°€ ë‹¬ë¦½ë‹ˆë‹¤.");
 	}
 	abstract public  void run();
 }
