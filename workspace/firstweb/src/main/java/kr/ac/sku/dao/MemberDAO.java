@@ -1,10 +1,13 @@
-package day05;
+package kr.ac.sku.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+
+import kr.ac.sku.common.DBUtil;
+import kr.ac.sku.dto.MemberDTO;
 
 public class MemberDAO {
 	// 입력
