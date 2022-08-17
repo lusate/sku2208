@@ -43,11 +43,78 @@ public class MemberDAO {
 		return resultFlag;
 	}
 	// 수정
-
+	public void updateMember(MemberDTO member) {
+		//선언
+		Connection conn = null;
+		PreparedStatement ps = null;
+		
+		try {
+			conn = DBUtil.getConnection();
+			String sql = "update member set name=?,password=?,email=? where id = ?";
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, member.getName());
+			ps.setString(2, member.getPassword());
+			ps.setString(3, member.getEmail());
+			ps.setString(4, member.getId());
+			
+			ps.executeUpdate();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBUtil.close(conn, ps);
+		}
+	}
 	// 삭제
-
+	public void delMember(String id) {
+		Connection conn = null;
+		PreparedStatement ps = null;
+		try {
+			conn = DBUtil.getConnection();
+			String sql = "delete from member where id=? ";
+			
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, id);
+			
+			ps.executeUpdate();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBUtil.close(conn, ps);
+		}
+	}
 	// 조회(id로 조회)
-
+	public MemberDTO getMember(String id) {
+		MemberDTO member = null;
+		Connection conn = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		try {
+			conn = DBUtil.getConnection();
+			String sql = "select id,name,password,email,join_date from member where id = ?";
+			
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, id);
+			
+			rs = ps.executeQuery();
+			
+			if(rs.next()) {
+				member = new MemberDTO();
+				member.setId(rs.getString(1));
+				member.setName(rs.getString(2));
+				member.setPassword(rs.getString(3));
+				member.setEmail(rs.getString(4));
+				member.setJoinDate(rs.getString(5));
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBUtil.close(conn, ps, rs);
+		}
+		
+		
+		return member;
+	}
 	// 전체 조회
 	public List<MemberDTO> getMembers() {
 		List<MemberDTO> memberList = new ArrayList();

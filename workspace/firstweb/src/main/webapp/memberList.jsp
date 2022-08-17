@@ -34,7 +34,7 @@
 		<td><%=member.getEmail() %></td>
 		<td><%=member.getJoinDate() %></td>
 		<td><a href="memberUpdateForm.jsp?id=<%=member.getId() %>">수정</a></td>
-		<td><a href="memberDel.jsp?id=<%=member.getId() %>">삭제</a></td>
+		<td><a href="memberDel?id=<%=member.getId() %>">삭제</a></td>
 	</tr>
 	<%} }%>
 </table>

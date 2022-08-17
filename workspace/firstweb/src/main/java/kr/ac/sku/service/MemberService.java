@@ -23,4 +23,16 @@ public class MemberService {
 		return dao.getMembers();
 	}
 	
+	//회원삭제
+	public void delMember(String id) {
+		dao.delMember(id);
+	}
+	//회원정보조회
+	public MemberDTO getMember(String id) {
+		return dao.getMember(id);
+	}
+	//회원정보수정
+	public void updateMember(MemberDTO member) {
+		dao.updateMember(member);
+	}
 }
