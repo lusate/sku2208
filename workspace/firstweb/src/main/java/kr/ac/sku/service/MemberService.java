@@ -35,4 +35,15 @@ public class MemberService {
 	public void updateMember(MemberDTO member) {
 		dao.updateMember(member);
 	}
+	
+	//회원확인
+	public int checkMember(String id, String password) {
+		MemberDTO member = dao.getMember(id);
+		if(member == null)
+			return 1;
+		else if(member.getPassword().equals(password)) 
+			return 3;
+		else
+			return 2;
+	}
 }
